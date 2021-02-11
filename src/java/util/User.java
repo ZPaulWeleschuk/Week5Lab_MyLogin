@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author 843876
  */
-class User  implements Serializable{
+public class User  implements Serializable{
    private String username; 
    private String password;
 
@@ -19,7 +19,11 @@ class User  implements Serializable{
         username="";
         password="";
     }
-
+   
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
     public String getUsername() {
         return username;
     }
@@ -36,10 +40,7 @@ class User  implements Serializable{
         this.password = password;
     }
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+
    
    
 }

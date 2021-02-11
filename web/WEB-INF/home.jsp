@@ -13,8 +13,7 @@
     </head>
     <body>
         <h1>Welcome Home</h1>
-        <p> hello </p>
-        <p>test test test</p>
-        <!--<a href="login?invalidate">Logout</a>-->
+        <p> hello ${username}</p>
+        <a href="Login?invalidate=true">Logout</a>
     </body>
 </html>
